@@ -12,8 +12,8 @@ import { Link } from 'react-router-dom';
 function App() {
   return (
     <div style={{height: '100vh', position: 'relative'}}>
-    <Layout className="header-colour">
-        <Header transparent title="Title" style={{color: 'white'}}
+    <Layout >
+        <Header className="header-colour" title="Title" style={{color: 'white'}}
           >
             <Navigation>
                 <Link to="/about">About</Link>

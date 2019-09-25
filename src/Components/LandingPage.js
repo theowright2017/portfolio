@@ -19,7 +19,7 @@ const LandingPage = (props) => {
 
             <hr/>
 
-            <p> Javascript | React | Firebase </p>
+            <p> Javascript | React | Firebase | NodeJS | MongoDb </p>
 
 
               {/* social media links */}
