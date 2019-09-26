@@ -9,7 +9,7 @@ class Resume extends Component {
     return(
       <div>
         <Grid className="resume-body">
-          <Cell col={4} className='resume-left-col'>
+          <Cell col={6} className='resume-left-col'>
             <div style={{textAlign: 'center'}}>
               <img src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
               alt="avatar"
@@ -25,7 +25,7 @@ class Resume extends Component {
 
 
           </Cell>
-          <Cell className="resume-right-col" col={8}>
+          <Cell className="resume-right-col" col={6}>
             <h2>Tech Interests</h2>
 
             <h2>Tech Education</h2>
@@ -56,7 +56,7 @@ class Resume extends Component {
 
           <hr style={{borderTop: '2px solid blue'}} />
 
-        
+
 
           </Cell>
         </Grid>
