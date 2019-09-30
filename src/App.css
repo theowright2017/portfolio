@@ -1,22 +1,45 @@
 
 
 .header-colour {
-  background: #009FFF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: white;  /* fallback for old browsers */
+
+}
+
+.mdl-layout {
   display: flex;
-  justify-content: flex-end;
+
 }
 
 
 .mdl-layout__header-row {
   display: flex;
   justify-content: flex-end;
+  padding: 0 2em 0 0 !important;
+  color: #162129;
 }
+
+
+
+
+
+
+
+
+/* .fa-linkedin-square, .fa-github-square {
+  display: inline-block;
+} */
+
+
+
+
+
+
+
+
  .landing-grid {
 
   text-align: center;
-  position: fixed;
+
   top: 0;
   left: 0;
   width: 100%;
