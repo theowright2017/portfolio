@@ -1,125 +1,267 @@
-
-
-.header-colour {
-  background: white;  /* fallback for old browsers */
-
+/* Global styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-.mdl-layout {
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+/* other styles */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+body {
+  background-color: cornflowerblue;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:1;
+}
+
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+nav {
+  width: 100%;
   display: flex;
-
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solud rgba(255,255,255,.2)
 }
 
+.menu-icons {
+  left: 2rem;
+}
 
-.mdl-layout__header-row {
+.menu-icons i {
+  font-size: 2rem;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.close i {
+  color: #eb648c;
+}
+
+.nav-list {
+  width: 25rem;
+  height: 100vh;
+  background-color: #d7d4ed;
+  position: fixed;
+  top: 0;
+  right: -26rem;
   display: flex;
-  justify-content: flex-end;
-  padding: 0 2em 0 0 !important;
-  color: #162129;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+  transition: all 650ms ease-in-out;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.nav-list.active {
+  right: 0;
+}
+
+.nav-item {
+  margin: 1.5rem 0;
+
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.5)
 }
 
 
+.hero {
+  width: 100%;
+  height: 80vh;
+  /* background: linear-gradient(135deg, rgba(49,24,131,0.9)0%, rgba(72,56,149, 0.8) 100%), url("images/hero") center no-repeat; */
+  background-size: cover;
+  position: relative;
+}
 
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4.7rem;
+}
 
+.main-message {
+  width: 100%;
+  max-width: 50rem;
+  color: #fafafa;
+  text-transform: uppercase;
+  transform: translateY(20%);
+}
 
+.main-message h3 {
+  font-size: 1.6rem;
+}
 
+.main-message h2 {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 4rem;
+  margin: 1rem 0;
+}
 
+.main-message p {
+  text-transform: lowercase;
+}
 
-/* .fa-linkedin-square, .fa-github-square {
+.btn {
+  background-color: #eb648c;
+  border-radius: 2rem;
+  color: #fafafa;
   display: inline-block;
-} */
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  transition: background-color 650ms
+}
 
+.btn:hover {
+  background-color: #ce587b;
+}
 
+/* experience outdoors */
 
+.experience-outdoors {
+  padding: 0;
+}
 
-
-
-
-
- .landing-grid {
-
+.title-heading {
   text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+  color: rgba(0,0,0,0.7);
+}
 
+.title-heading h3 {
+  font-size: 1.4rem;
+}
+
+.title-heading h1 {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.title-heading p {
+  text-transform: lowercase;
+}
+
+
+
+/* grid */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+/* align text in stack effect */
+.activities-grid-item {
+  height: 40rem;
+  padding: 5rem;
+  color: #fafafa;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.activites-grid-item::before {
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-}
-
-.projects-grid {
-  display: flex;
-  justify-content: space-between;
-}
-
-.contact-body {
-  position: fixed;
-  width: 100%;
   height: 100%;
-
-
+  background-image: linear-gradient(135deg, rgba(49,24,131,0.9)0%, rgba(72,56,149, 0.8) 100%);
+  z-index: -1;
 }
 
-.contact-grid {
-  text-align: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  background: white;
-  color: black;
-
-
+.star-gazing {
+  background: url("https://d194ip2226q57d.cloudfront.net/images/Best_Summer_Stargazing.original.png") center no-repeat;
 }
 
-.contact-grid h2 {
-  font-family: anton sans-serif;
+.hiking {
+    background: url("https://d194ip2226q57d.cloudfront.net/images/Best_Summer_Stargazing.original.png") center no-repeat;
 }
 
-.contact-grid p {
-  font-family: oxygen sans-serif;
-  font-weight: bold;
+.camping {
+    background: url("https://d194ip2226q57d.cloudfront.net/images/Best_Summer_Stargazing.original.png") center no-repeat;
 }
 
-.contact-grid hr {
-  border-top: 5px dotted black;
-  width: 50%;
-  margin: auto;
+.activities-grid-item i {
+  font-size: 4rem;
+  color: #eb648c;
 }
 
-.contact-list i {
-  padding-right: 2em;
+.activities-grid-item h1 {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
 }
 
 
 
 
-.mdl-grid {
-  margin: 0px !important;
-  padding: 0px !important;
-}
-
-.mdl-cell {
-  margin: 0px !important;
-  padding: 0px !important;
-}
 
 
 
-.resume-body {
-  height: 100vh;
-  width: 100vw;
-  margin: 0px !important;
-  padding: 0px !important;
-  display: flex;
-}
 
-.resume-right-col {
 
-  color: black;
-  margin: 0px !important;
-  padding: 0px !important;
-  background: grey;
 
-}
-.resume-left-col {
-  margin: 0px !important;
-  padding: 0px !important;
-}
+
+/*  */

@@ -1,57 +1,168 @@
 import React from 'react';
 import Main from './Components/Main';
-import { Button, Card, CardText, Layout, Header,
-          Navigation, Drawer, Content} from 'react-mdl';
-import { Grid, Cell} from 'react-mdl';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 
 import './App.css';
 
-import { Link } from 'react-router-dom';
+
 
 
 
 function App() {
   return (
-    <div style={{height: '100vh', position: 'relative'}}>
-    <Layout >
-      <Header className="header-colour"  style={{color: 'white'}}
-        >
-      <Grid>
-        <Cell col={8}>
+    <div className="container">
 
-            <Navigation>
-                <Link to="/">About</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+      <header>
 
-            </Navigation>
+        <div className="menu-icons open">
+          <i className="fa fa-bars"></i>
+        </div>
 
-        </Cell>
-      </Grid>
+        <ul className="nav-list">
 
-
-
-
-
-        
-              </Header>
-
-
-
-        <Content>
-          <div className="page-content" >
-             <Main />
+          <div className="menu-icons close">
+            <i className="fa fa-close"></i>
           </div>
-        </Content>
-    </Layout>
-</div>
 
+          <li className="nav-item">
+            <a href="#" className="nav-link">Home</a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">About</a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">Projects</a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">Contact</a>
+          </li>
+        </ul>
+
+    </header>
+
+    <main>
+
+      <section className="hero">
+        <div class="container">
+          <div className="main-message">
+            <h3>Theo Wright</h3>
+            <h2>Junior Developer</h2>
+            <p>Hi, thanks for looking, here's a bit about me..</p>
+            <p>I love to solve problems and apply myself to challenging tasks,</p>
+            <p>I have experience of Full Stack Development, but for now will be focussing on the front end, to develop my skills further</p>
+            <div className="cta">
+              <a href="#" class="btn">This link</a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section className="experience">
+
+        <div className="container">
+
+          <div className="title-heading">
+            <h3>Experience</h3>
+            <h1>The thrilling outdoors</h1>
+            <p>lorornnvsnv lorornnvsnvlorornnvsnv</p>
+          </div>
+
+
+
+          <div className="activities-grid">
+
+            <div className="activities-grid-item star-gazing">
+                <i className=" fa fa-star"></i>
+                <h1>Star Gazing</h1>
+                <p>lorornnvsnv lorornnvsnvlorornnvsnv</p>
+            </div>
+
+            <div className="activities-grid-item hiking">
+                <i className=" fa fa-compass"></i>
+                <h1>Hiking</h1>
+                <p>lorornnvsnv lorornnvsnvlorornnvsnv</p>
+            </div>
+
+            <div className="activities-grid-item camping">
+                <i className=" fa fa-fire"></i>
+                <h1>Camping</h1>
+                <p>lorornnvsnv lorornnvsnvlorornnvsnv</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="begin-adventure">
+        <div className="container">
+          // 55 mins
+        </div>
+
+
+      </section>
+    </main>
+
+
+
+    </div>
+//
 
 
   );
 }
 
 export default App;
+
+
+// <Navigation>
+//              <Link to="/">About</Link>
+//              <Link to="/projects">Projects</Link>
+//              <Link to="/contact">Contact</Link>
+//
+// </Navigation>
+
+
+
+
+// <div style={{height: '100vh', position: 'relative'}}>
+//     <Layout >
+//       <Header className="header-colour"  style={{color: 'white'}}
+//         >
+//       <Grid>
+//         <Cell col={8}>
+//
+//             <Navigation>
+//                 <Link to="/">About</Link>
+//                 <Link to="/projects">Projects</Link>
+//                 <Link to="/contact">Contact</Link>
+//
+//             </Navigation>
+//
+//         </Cell>
+//       </Grid>
+//
+//
+//
+//
+//
+//
+//               </Header>
+//
+//
+//
+//         <Content>
+//           <div className="page-content" >
+//              <Main />
+//           </div>
+//         </Content>
+//     </Layout>
+// </div>
+
 
 
 // <div className="social_links">
